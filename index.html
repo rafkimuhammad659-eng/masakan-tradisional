@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rasa Nusantara - Blog Resep Masakan Tradisional Indonesia</title>
+    <!-- Menghubungkan ke file CSS eksternal -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts untuk nuansa klasik dan modern -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        /* Tambahan styling khusus gambar kartu agar proporsional */
+        .card-image {
+            width: 100%;
+            height: 220px;
+            overflow: hidden;
+            border-bottom: 3px solid #C88A2B;
+            background-color: #E6D8C5;
+        }
+        .card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.4s ease;
+        }
+        .recipe-card:hover .card-image img {
+            transform: scale(1.06);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navigasi -->
+    <header class="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo">✦ Rasa<span>Nusantara</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#beranda">Beranda</a></li>
+                    <li><a href="#daftar-resep">Daftar Resep</a></li>
+                    <li><a href="#tentang">Tentang Kami</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section id="beranda" class="hero">
+        <div class="hero-overlay">
+            <div class="container hero-text">
+                <span class="badge-nusantara">Warisan Kuliner Indonesia</span>
+                <h1>Blog Resep Masakan Tradisional</h1>
+                <p>Kumpulan resep autentik dari Sabang sampai Merauke yang diwariskan turun-temurun untuk dapur rumah Anda.</p>
+                <a href="#daftar-resep" class="btn-utama">Jelajahi 6 Resep Pilihan</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Konten Utama: Daftar Resep -->
+    <main id="daftar-resep" class="container main-section">
+        <div class="section-header">
+            <h2>Selamat Datang Di Blog Resep</h2>
+            <div class="ornamen-garis"></div>
+            <p>Temukan Berbagai Resep Masakan Khas Nusantara.</p>
+        </div>
+
+        <div class="recipe-grid">
+
+            <!-- 1. RENDANG -->
+            <article class="recipe-card">
+                <div class="card-image">
+                    <img src="re.jpg.jpeg">
+                </div>
+                <div class="card-header">
+                    <span class="region-tag">Sumatera Barat</span>
+                    <h3>Rendang</h3>
+                    <p class="desc">Olahan daging sapi kaya rempah yang dimasak perlahan dalam santan hingga mengering dan berwarna cokelat gelap.</p>
+                </div>
+                <div class="card-body">
+                    <h4>Bahan Utama:</h4>
+                    <ul>
+                        <li>1 kg daging sapi (potong sesuai selera)</li>
+                        <li>1,5 liter santan kental dari 3 butir kelapa</li>
+                        <li>2 batang serai (memarkan), 4 lembar daun jeruk</li>
+                        <li>2 lembar daun kunyit (ikat simpul), 1 asam kandis</li>
+                    </ul>
+                    <h4>Bumbu Halus:</h4>
+                    <ul>
+                        <li>15 butir bawang merah, 8 siung bawang putih</li>
+                        <li>100 gr cabai merah keriting, 3 cm jahe, 4 cm lengkuas</li>
+                        <li>1 sdt ketumbar sangrai, 1/2 sdt jintan, garam secukupnya</li>
+                    </ul>
+                    <h4>Cara Membuat:</h4>
+                    <ol>
+                        <li>Masak santan bersama bumbu halus dan daun-daunan sambil terus diaduk agar santan tidak pecah hingga mendidih dan berminyak.</li>
+                        <li>Masukkan potongan daging sapi, kecilkan api.</li>
+                        <li>Masak perlahan sambil sesekali diaduk hingga kuah menyusut menjadi kalio, lalu lanjutkan mengaduk hingga dedak rendang mengering dan menghitam (sekitar 3-4 jam).</li>
+                    </ol>
+                </div>
+            </article>
+
+            <!-- 2. GUDEG -->
+            <article class="recipe-card">
+                <div class="card-image">
+                    <img src="gu.jpg.jpeg">
+                </div>
+                <div class="card-header">
+                    <span class="region-tag">DI Yogyakarta</span>
+                    <h3>Gudeg</h3>
+                    <p class="desc">Hidangan manis gurih khas Jogja berbahan dasar nangka muda yang dimasak berjam-jam dengan gula aren dan santan.</p>
+                </div>
+                <div class="card-body">
+                    <h4>Bahan Utama:</h4>
+                    <ul>
+                        <li>1 kg nangka muda (gori), potong dadu besar</li>
+                        <li>1 liter santan kelapa, 5 butir telur rebus kupas</li>
+                        <li>150 gr gula merah (sisir halus)</li>
+                        <li>3 lembar daun salam, 3 cm lengkuas, 2 lembar daun jati (untuk warna merah alami)</li>
+                    </ul>
+                    <h4>Bumbu Halus:</h4>
+                    <ul>
+                        <li>10 butir bawang merah, 6 siung bawang putih</li>
+                        <li>5 butir kemiri sangrai, 1 sdm ketumbar sangrai</li>
+                        <li>1 sdt terasi bakar, garam secukupnya</li>
+                    </ul>
+                    <h4>Cara Membuat:</h4>
+                    <ol>
+                        <li>Alasi dasar panci dengan daun jati dan daun salam, lalu tata nangka muda dan telur rebus di atasnya.</li>
+                        <li>Tuang santan yang sudah dicampur bumbu halus dan gula merah hingga nangka terendam.</li>
+                        <li>Tutup rapat panci, masak dengan api sangat kecil selama 4-5 jam hingga kuah habis meresap dan gudeg berwarna cokelat kemerahan.</li>
+                    </ol>
+                </div>
+            </article>
+
+            <!-- 3. SATE AYAM -->
+            <article class="recipe-card">
+                <div class="card-image">
+                    <img src="sa.jpg.jpeg">
+                </div>
+                <div class="card-header">
+                    <span class="region-tag">Madura, Jawa Timur</span>
+                    <h3>Sate Ayam</h3>
+                    <p class="desc">Potongan daging ayam panggang bara arang yang disiram saus kacang gurih legit serta kecap manis.</p>
+                </div>
+                <div class="card-body">
+                    <h4>Bahan Utama:</h4>
+                    <ul>
+                        <li>500 gr dada/paha ayam fillet (potong dadu)</li>
+                        <li>20 tusuk sate bambu (rendam air agar tidak mudah gosong)</li>
+                        <li>Kecap manis, jeruk limau, dan bawang merah iris untuk pelengkap</li>
+                    </ul>
+                    <h4>Bumbu Kacang:</h4>
+                    <ul>
+                        <li>200 gr kacang tanah goreng, haluskan</li>
+                        <li>4 siung bawang putih, 5 butir bawang merah (goreng utuh lalu haluskan)</li>
+                        <li>3 butir kemiri sangrai, 2 sdm gula merah, garam & air matang secukupnya</li>
+                    </ul>
+                    <h4>Cara Membuat:</h4>
+                    <ol>
+                        <li>Masak kacang halus bersama bawang, kemiri, gula merah, dan air hingga mengental dan mengeluarkan minyak.</li>
+                        <li>Tusuk daging ayam ke tusukan sate. Lumuri dengan 2 sdm bumbu kacang dan 2 sdm kecap manis.</li>
+                        <li>Bakar di atas bara api sambil sesekali dioles sisa bumbu hingga matang kecokelatan. Sajikan dengan siraman saus kacang dan perasan jeruk limau.</li>
+                    </ol>
+                </div>
+            </article>
+
+            <!-- 4. RAWON -->
+            <article class="recipe-card">
+                <div class="card-image">
+                    <img src="ra.jpg.jpeg">
+                </div>
+                <div class="card-header">
+                    <span class="region-tag">Jawa Timur</span>
+                    <h3>Rawon</h3>
+                    <p class="desc">Sup daging sapi berkuah hitam pekat yang unik dan harum berkat penggunaan rempah khas Nusantara, kluwek.</p>
+                </div>
+                <div class="card-body">
+                    <h4>Bahan Utama:</h4>
+                    <ul>
+                        <li>500 gr daging sapi sandung lamur, potong dadu</li>
+                        <li>2 liter air untuk merebus</li>
+                        <li>2 batang serai, 4 lembar daun jeruk, 2 cm lengkuas</li>
+                        <li>Pelengkap: tauge pendek, telur asin, sambal terasi</li>
+                    </ul>
+                    <h4>Bumbu Halus:</h4>
+                    <ul>
+                        <li>4 buah kluwek tua (ambil isinya, rendam air panas)</li>
+                        <li>8 bawang merah, 4 bawang putih, 3 butir kemiri</li>
+                        <li>2 cm kunyit, 1 cm jahe, 1 sdt ketumbar, garam</li>
+                    </ul>
+                    <h4>Cara Membuat:</h4>
+                    <ol>
+                        <li>Rebus daging sapi hingga empuk, saring kaldunya dan sisihkan daging yang sudah dipotong-potong.</li>
+                        <li>Tumis bumbu halus bersama serai, daun jeruk, dan lengkuas hingga benar-benar matang dan harum.</li>
+                        <li>Masukkan tumisan bumbu dan potongan daging ke dalam air kaldu. Masak kembali hingga bumbu meresap. Sajikan hangat dengan tauge dan telur asin.</li>
+                    </ol>
+                </div>
+            </article>
+
+            <!-- 5. PEMPEK -->
+            <article class="recipe-card">
+                <div class="card-image">
+                    <img src="pe.jpg.jpeg">
+                </div>
+                <div class="card-header">
+                    <span class="region-tag">Palembang, Sumsel</span>
+                    <h3>Pempek</h3>
+                    <p class="desc">Olahan ikan tenggiri kenyal berisi telur yang disajikan bersama kuah cuko asam, manis, dan pedas.</p>
+                </div>
+                <div class="card-body">
+                    <h4>Bahan Pempek:</h4>
+                    <ul>
+                        <li>500 gr daging ikan tenggiri giling dingin</li>
+                        <li>350 gr tepung sagu tani, 250 ml air es</li>
+                        <li>1 sdm garam, 1 sdt kaldu jamur, 4 butir telur (untuk isian)</li>
+                    </ul>
+                    <h4>Bahan Kuah Cuko:</h4>
+                    <ul>
+                        <li>250 gr gula batok/gula aren hitam, 500 ml air</li>
+                        <li>5 siung bawang putih, 10 cabai rawit hijau (haluskan)</li>
+                        <li>2 sdm asam jawa, 1/2 sdt garam</li>
+                    </ul>
+                    <h4>Cara Membuat:</h4>
+                    <ol>
+                        <li>Aduk ikan giling dengan air es dan garam hingga mengental, masukkan tepung sagu sedikit demi sedikit hingga kalis (jangan diuleni terlalu keras).</li>
+                        <li>Bentuk adonan seperti kantung, isi dengan 1 butir telur kocok, lalu rapatkan ujungnya. Rebus di air mendidih hingga mengapung.</li>
+                        <li>Rebus semua bahan cuko hingga mendidih dan saring. Goreng pempek yang sudah dingin, potong-potong, lalu siram cuko.</li>
+                    </ol>
+                </div>
+            </article>
+
+            <!-- 6. PAPEDA -->
+            <article class="recipe-card">
+                <div class="card-image">
+                    <img src="pa.jpg.jpeg">
+                </div>
+                <div class="card-header">
+                    <span class="region-tag">Papua & Maluku</span>
+                    <h3>Papeda</h3>
+                    <p class="desc">Bubur sagu bertekstur kenyal dan bening yang nikmat disantap bersama ikan tongkol kuah kuning segar.</p>
+                </div>
+                <div class="card-body">
+                    <h4>Bahan Papeda:</h4>
+                    <ul>
+                        <li>200 gr tepung sagu murni</li>
+                        <li>1 liter air (200 ml air dingin + 800 ml air mendidih)</li>
+                        <li>1/2 sdt garam</li>
+                    </ul>
+                    <h4>Bahan Ikan Kuah Kuning:</h4>
+                    <ul>
+                        <li>500 gr ikan tongkol/mubara, lumuri jeruk nipis</li>
+                        <li>Bumbu halus: 6 bawang merah, 3 bawang putih, 3 cm kunyit bakar, 2 cm jahe, 3 kemiri</li>
+                        <li>1 batang serai, 2 daun salam, daun kemangi, 700 ml air</li>
+                    </ul>
+                    <h4>Cara Membuat:</h4>
+                    <ol>
+                        <li><strong>Kuah Kuning:</strong> Tumis bumbu halus dan serai hingga harum, tuang air hingga mendidih. Masukkan ikan, garam, gula, dan daun kemangi. Masak hingga ikan matang.</li>
+                        <li><strong>Papeda:</strong> Larutkan tepung sagu dengan 200 ml air dingin dan garam di wadah tahan panas.</li>
+                        <li>Tuang air yang benar-benar mendidih perlahan sambil terus diaduk cepat hingga sagu berubah bening dan mengental seperti lem. Sajikan langsung dengan kuah kuning.</li>
+                    </ol>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="tentang" class="footer">
+        <div class="container footer-content">
+            <h3>✦ Rasa Nusantara</h3>
+            <p>Menjaga kekayaan cita rasa rempah Indonesia tetap hidup di setiap meja makan.</p>
+            <p class="copyright">&copy; 2026 Blog Resep Masakan Tradisional.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

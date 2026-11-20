@@ -1,0 +1,275 @@
+/* =========================================
+   VARIABEL TEMA NUSANTARA
+   ========================================= */
+:root {
+    --bg-krem: #FAF5EB;          /* Warna kertas lontar / krem hangat */
+    --bg-kartu: #FFFFFF;         /* Putih bersih untuk keterbacaan resep */
+    --coklat-jati: #3E2723;      /* Coklat tua kayu jati */
+    --coklat-rempah: #5D4037;    /* Coklat sedang */
+    --emas-kunyit: #C88A2B;      /* Aksen emas/kunyit Nusantara */
+    --merah-terakota: #A03E2B;   /* Aksen merah bata/tenun */
+    --teks-utama: #2C1E18;
+    --teks-sekunder: #6D5B53;
+    --border-emas: #E2C799;
+}
+
+/* =========================================
+   RESET & DASAR
+   ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: var(--bg-krem);
+    /* Pola geometris halus terinspirasi motif kawung/batik */
+    background-image: radial-gradient(var(--border-emas) 1px, transparent 1px),
+                      radial-gradient(var(--border-emas) 1px, var(--bg-krem) 1px);
+    background-size: 40px 40px;
+    background-position: 0 0, 20px 20px;
+    color: var(--teks-utama);
+    line-height: 1.6;
+}
+
+h1, h2, h3, .logo {
+    font-family: 'Lora', serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* =========================================
+   NAVBAR
+   ========================================= */
+.navbar {
+    background-color: var(--coklat-jati);
+    border-bottom: 3px solid var(--emas-kunyit);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 1rem 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: var(--bg-krem);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.logo span {
+    color: var(--emas-kunyit);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.8rem;
+}
+
+.nav-links a {
+    color: var(--bg-krem);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--emas-kunyit);
+}
+
+/* =========================================
+   HERO SECTION
+   ========================================= */
+.hero {
+    background: linear-gradient(135deg, #2C1810 0%, #5D331E 50%, #3E2723 100%);
+    color: var(--bg-krem);
+    text-align: center;
+    padding: 5rem 1rem;
+    border-bottom: 5px double var(--emas-kunyit);
+    position: relative;
+}
+
+.badge-nusantara {
+    display: inline-block;
+    background-color: rgba(200, 138, 43, 0.2);
+    border: 1px solid var(--emas-kunyit);
+    color: #F3C677;
+    padding: 0.35rem 1rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.hero-text h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    color: #FFF8EB;
+}
+
+.hero-text p {
+    max-width: 650px;
+    margin: 0 auto 2rem;
+    font-size: 1.1rem;
+    color: #E6D8C5;
+}
+
+.btn-utama {
+    display: inline-block;
+    background-color: var(--emas-kunyit);
+    color: #23140D;
+    padding: 0.85rem 2rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-utama:hover {
+    background-color: #DDA03E;
+    transform: translateY(-2px);
+}
+
+/* =========================================
+   SECTION HEADER & GRID RESEP
+   ========================================= */
+.main-section {
+    padding: 4rem 0;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-header h2 {
+    font-size: 2.2rem;
+    color: var(--coklat-jati);
+}
+
+.ornamen-garis {
+    width: 90px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--merah-terakota), var(--emas-kunyit));
+    margin: 0.8rem auto 1rem;
+    border-radius: 2px;
+}
+
+.section-header p {
+    color: var(--teks-sekunder);
+}
+
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 2rem;
+}
+
+/* =========================================
+   KARTU RESEP (RECIPE CARD)
+   ========================================= */
+.recipe-card {
+    background-color: var(--bg-kartu);
+    border: 1px solid var(--border-emas);
+    border-top: 6px solid var(--merah-terakota);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(62, 39, 35, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(62, 39, 35, 0.15);
+}
+
+.card-header {
+    background-color: #FDF9F2;
+    padding: 1.5rem;
+    border-bottom: 1px dashed var(--border-emas);
+}
+
+.region-tag {
+    display: inline-block;
+    background-color: var(--coklat-jati);
+    color: #F3C677;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    margin-bottom: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.card-header h3 {
+    font-size: 1.5rem;
+    color: var(--coklat-jati);
+    margin-bottom: 0.5rem;
+}
+
+.card-header .desc {
+    font-size: 0.9rem;
+    color: var(--teks-sekunder);
+}
+
+.card-body {
+    padding: 1.5rem;
+    font-size: 0.92rem;
+}
+
+.card-body h4 {
+    color: var(--merah-terakota);
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 0.4rem;
+    border-bottom: 1px solid #F0E6D6;
+    padding-bottom: 0.2rem;
+}
+
+.card-body h4:first-child {
+    margin-top: 0;
+}
+
+.card-body ul,
+.card-body ol {
+    padding-left: 1.25rem;
+    color: var(--teks-utama);
+}
+
+.card-body li {
+    margin-bottom: 0.35rem;
+}
+
+/* =========================================
+   FOOTER
+   ========================================= */
+.footer {
+    background-color: var(--coklat-jati);
+    color: #E6D8C5;
+    text-align: center;
+    padding: 2.5rem 1rem;
+    border-top: 4px solid var(--emas-kunyit
